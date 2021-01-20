@@ -59,9 +59,9 @@ for candidate in votes.keys():
 # print(winning_candidate_summary)
 
 
-election_results_csv = pathlib.Path('**PyPoll**/Analysis/election_results.txt')
+election_results_csv = pathlib.Path('Analysis/election_results.txt')
 
-with open(election_results_csv, mode ='w') as outputfile:
+with open(election_results_csv,'w') as outputfile:
     # csvwriter = csv.writer(outputfile)
 
     election_results = (
@@ -86,7 +86,7 @@ with open(election_results_csv, mode ='w') as outputfile:
         f"Winner: {winner}\n"
         f"--------------------\n"
     )
-    outputfile.write(wining_candidate_summary)
+    outputfile.write(winning_candidate_summary)
 
     print(winning_candidate_summary)
 
